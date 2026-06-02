@@ -1,0 +1,496 @@
+/* تنسيقات عامة للموقع */
+body {
+    font-family: 'Cairo', sans-serif; /* تنسيقات الخط العربي */
+    background-color: #F9F6F0; /* لون  الخلفي للموقع */
+    color: #2D1B10; /* لون لنصوص */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 1. تنسيق الهيدر */
+header {
+    background-color: #F9F6F0; /* خلفية الهيدر */
+    color: #2D1B10; /* لون اي شيئ يكتب في الهيدر */
+    text-align: center; /* مكن الكتابة في المنتصف */
+    padding: 30px 0;
+  /* اضافات اللوقو بطريقة اضافة الزخرفة */
+    position: relative; 
+
+    background-image: /* اضفاة الصور و الفصل بين السطور بفاصلو و الاخيرة فاصلة منقوطة */
+        url('images/P8.png');
+ 
+    background-position: /* مكان الصورة  */
+        top center;
+
+    background-repeat: /* نكتب نو ريبيت مهما كان */
+        no-repeat; 
+
+    background-size: /* حجم الصورة  */
+         70px auto;
+
+  /* انتهى كود الزخرفة  */
+
+}
+
+header .logo {  /* مكان و حجم اللوقو الي هو العنوان الانجليزي */
+    font-size: 14px;
+    font-weight: bold;  /* الخط السميك */
+    letter-spacing: 1px;
+    margin-top: 7px; /*  التحكم بالبعد بالنسبة للحافة العلوية  */
+    line-height: 1;
+}
+
+header .logo span { /* اللوقو الي بالعربي  */
+    font-size: 26px;
+    font-weight: normal; /* خط رفيع */
+}
+
+
+/* 2. تنسيق الناف بار  */
+.navbar {
+    color: #fff7f1;
+    background-color: #2D1B10; /* بني بدرجة مختلفة تماماً أو بيج */
+    text-align: center;
+    padding: 12px 0;
+    border-top: 1px solid #fff7f1; /* خط رفيع يفصله عن اللوجو */
+}
+
+.navbar a {
+    color: #FFF;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 15px;
+}
+
+.navbar a:hover {
+    color: #ffffff; /* يضيء باللون الأبيض العاجي المائل للوردي الخفيف جداً عند مرور الفأرة */
+}
+
+/* 3. تنسيق القسم الترحيبي الرئيسي*/
+.hero-section {
+    color: white;
+    text-align: center;
+    padding: 150px 20px;
+
+  /* بداية كود الزخاريف */ 
+    position: relative; 
+
+    background-image: 
+        url('images/P6.png'), 
+        url('images/P7.png'),
+        url('images/P4.png'),
+        url('images/P5.png'),
+        linear-gradient(rgba(45, 27, 16, 0.7), rgba(45, 27, 16, 0.7)), url('images/P0.jpg'); /* اضافة الصورة والاضافة الشفافة فوقهامع بعض */
+
+    background-position: 
+        top left,   
+        top right, 
+        bottom right,
+        bottom left,
+        center,
+        center;
+
+    background-repeat: 
+        no-repeat, 
+        no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat;
+
+    background-size: 
+        200px auto,  
+        200px auto, 
+        200px auto,
+        200px auto,
+        cover,
+        cover;
+  /* انتهى كود الزخرفة  */
+}
+
+.hero-content { /* وضعناها لكي نضع فيها الكتابة فقط لتسهيل التحكم  */ 
+    max-width: 650px;    /* نمنع النص من أن يتمدد لأكثر من 650 بكسل أفقياً */
+    margin: 0 auto;       /* يقوم بتوسيط هذا الصندوق الصغير في منتصف الشاشة تماماً */
+}
+
+.hero-section h1 { /* التحكم في العنوان الكبير */
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.btn-main { /* التحكم في زر في الصفحة الرئيسية */
+    background-color: #fae3ea;
+    color: #2D1B10;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+/* تأثير مرور الفأرة على الزر الرئيسي */
+.btn-main:hover {
+    background-color: #2D1B10; 
+    color: #fae3ea;    
+    border: #fae3ea; 
+}
+
+
+/* 4. تنسيق على المنتجات  المنتجات */
+
+     /* 4.1. الاول الابيض */
+.products-section {
+    padding: 6px 10%;
+    text-align: center;
+  /* بداية كود الزخرفة */
+    position: relative; 
+
+    background-image: 
+        url('images/P3.png'), 
+        url('images/P2.png');  
+
+    background-position: 
+        top left,   
+        top right;   
+
+    background-repeat: 
+        no-repeat, 
+        no-repeat; 
+
+    background-size: 
+        200px auto, 
+        200px auto,  
+         100% 100%;    
+  /* انتهى كود الزخرفة  */
+}
+
+.section-title {
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #2D1B10;
+}
+
+.products-grid {
+    display: flex;             /* بقاء الكروت بجانب بعضها كصف واحد */
+    gap: 20px;                 /* مسافة بين الكروت */
+    padding: 20px 10px;
+  /* تمرير الجانبي */
+    overflow-x: auto;          /* يظهر شريط التمرير إذا خرجت الكروت عن الشاشة */
+    flex-wrap: nowrap;         /* إلغاء الخاصية القديمة لمنع الكروت من النزول تحت بعضها */
+    -webkit-overflow-scrolling: touch; 
+    justify-content: flex-start;  /* حركة يمين يسار */
+}
+
+.product-card {                 /* تنسيق الكرت */
+    background: #F9F6F0;
+    border: 1px solid #E0D4C3;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    text-align: center;
+    width: 280px;         
+    flex-shrink: 0;     
+}
+
+.product-card img {             /* تنسيق صورة الكرت */
+    width: 100%;
+    border-radius: 5px;
+}
+
+.btn-whatsapp {                /* تنسيق زر الطلب */
+    background-color: #2D1B10;
+    color: #FFF;
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-top: 15px;
+    font-size: 14px;
+    margin: 15px auto 0 auto;
+
+}
+
+     /* 4.2. الثاني بني */
+.dark-bg {
+    background-color: #2D1B10;
+    color:#E0D4C3;
+  /* بدايو كود الزخرفة */
+    position: relative; 
+
+    background-image: 
+        url('images/P6.png'), 
+        url('images/P7.png');  
+
+    background-position: 
+        top left, 
+        top right;   
+
+    background-repeat: 
+        no-repeat, 
+        no-repeat; 
+
+    background-size: 
+        200px auto,  
+        200px auto,   
+         100% 100%;    
+  /* انتهى كود الزخرفة  */
+}
+
+.dark-bg .section-title {
+    color: #FFF;
+}
+
+.product-card h3 {
+    color: #2D1B10;
+}
+
+.product-card p {
+    color:#2D1B10 ;
+}
+
+
+   /* قسم اراء العملاء اخر قسم */
+.reviews-section {
+    background-color: #F9F6F0;
+    padding: 50px 10%; /*الهوامش */
+    text-align: center;
+  /* كود اضافة الزخرفة نضعه مع الخلفية  */  
+    position: relative; 
+
+    background-image: 
+        url('images/P3.png'),
+        url('images/P2.png'),  
+        url('images/P1.png'),
+        linear-gradient(to bottom, rgb(255, 241, 252) 55%, #D4A396 55%); /*  كود الخلفية المقسومة  */
+
+    background-position: 
+        top left,    
+        top right,   
+        bottom left, 
+        center;      
+
+    background-repeat: 
+        no-repeat, 
+         no-repeat,
+        no-repeat, 
+        no-repeat;
+
+    background-size: 
+        200px auto,
+        200px auto,  
+        250px auto, 
+        100% 100%;    
+  /* انتهى كود الزخرفة  */
+}
+
+/* التحكم في أبعاد وحجم عنوان آراء العملاء */
+.reviews-section h2 {
+    font-size: 32px;          /* تكبير و تضغير الخط */
+    font-weight: bold;      
+    
+    /*التحكم في الهوامش والأبعاد المحيطة بالكلمة */
+    margin-top: 10px;       
+    margin-bottom: 15px;     
+ 
+  /* جمالية لا تتغير  */  
+    letter-spacing: 0.5px;    
+    line-height: 1.4;          
+    color: #2D1B10;          
+}
+
+.reviews-grid {
+    display: flex;            
+    gap: 20px;               
+    padding: 20px 10px;
+    overflow-x: auto;         
+    flex-wrap: nowrap;        
+    -webkit-overflow-scrolling: touch; 
+    justify-content: flex-start; 
+}
+
+.review-card {                 /* تنسيق كرت اراء العملاء */
+    position: relative;  
+    margin-top: 50px;         
+    background: #fae3ea;
+    border: 1px solid #b38376;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    text-align: center;
+    width: 280px;       
+    flex-shrink: 0;     
+    box-shadow: 
+        0 8px 0px #2D1B10,
+        0 16px 0px #D4A396;  
+    margin-bottom: 30px;
+} 
+
+.user-img {                    /* صورة بروفايل المستخدم */
+    width: 80px;               /*  حجم  الدائرة */
+    height: 80px;
+    border-radius: 50%;        /*  الصورة دائرية  */
+    object-fit: cover;
+    margin-top: -60px;      
+  /* جمالية لا تتغير */
+    background-color: #FFF;   
+    border: 3px solid #FBF8F3; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+/*  هنا تعديلات شريط يمين يسار لاجزاء المنتجات  */
+.products-grid::-webkit-scrollbar {
+    height: 8px; /* جعل الشريط نحيفاً وأنيقاً أفقياً */
+}
+
+/* خلفية المجرى الذي يسير فيه الشريط */
+.products-grid::-webkit-scrollbar-track {
+    background: #F2EAE1; 
+    border-radius: 10px;
+}
+
+/* الزر المتحرك نفسه الذي يمسكه المستخدم */
+.products-grid::-webkit-scrollbar-thumb {
+    background-color: #2D1B10;
+    border-radius: 10px;     
+    border: 2px solid #F2EAE1; 
+}
+
+/* تأثير عند وضع الماوس على شريط التمرير */
+.products-grid::-webkit-scrollbar-thumb:hover {
+    background-color: #4A3221; 
+}
+/*  انتهى كود الشريط يمين يسار  */
+
+
+
+/*  هنا تعديلات شريط يمين يسار لجزء اراء العملاء */
+.reviews-grid::-webkit-scrollbar {
+    height: 8px; 
+}
+
+/* خلفية المجرى الذي يسير فيه الشريط */
+.reviews-grid::-webkit-scrollbar-track {
+    background: #F2EAE1; 
+    border-radius: 10px;
+}
+
+/* الزر المتحرك نفسه الذي يمسكه المستخدم */
+.reviews-grid::-webkit-scrollbar-thumb {
+    background-color: #D4A396;
+    border-radius: 10px;       
+    border: 2px solid #F2EAE1; 
+}
+
+/* تأثير عند وضع الماوس على شريط التمرير */
+.reviews-grid::-webkit-scrollbar-thumb:hover {
+    background-color: #D4A396; 
+}
+/*  انتهى كود الشريطيمين يسار  */
+
+
+
+
+
+
+
+
+
+/* الخلفية الشفافة العاتمة عند ظهور النافذة */
+.modal {
+display: none; 
+    position: fixed;
+    z-index: 9999;
+    
+    /* تثبيت الزوايا الأربعة على أطراف الشاشة تماماً */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    width: 100% !important;
+    height: 100% !important;
+    background-color: rgba(74, 46, 43, 0.6);
+    backdrop-filter: blur(4px);
+}
+
+/* صندوق النافذة المنبثقة نفسه */
+.modal-content {
+background-color: #FFFDF9;
+    padding: 30px;
+    border: 2px solid #4A2E2B;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 450px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    box-sizing: border-box;
+    
+    /* 🌟 قوانين التوسيط المركزي الدقيق 🌟 */
+    position: absolute;
+    top: 50% !important;    /* ينزل لمسافة 50% من أعلى الشاشة */
+    left: 50% !important;   /* يتحرك لمسافة 50% من يسار الشاشة */
+    
+    /* هذا السطر يسحب الصندوق بمقدار نصف طوله وعرضه ليعود للمركز الهندسي تماماً */
+    transform: translate(-50%, -50%) !important; 
+    
+    margin: 0 !important;   /* إلغاء أي هوامش قديمة تماماً */
+}
+
+/* لتنسيق زر الإغلاق الجديد */
+.close-btn {
+    text-decoration: none;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    color: #4A2E2B;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-title { color: #4A2E2B; margin-top: 0; font-size: 22px; }
+.modal-subtitle { color: #D4A396; font-size: 14px; margin-bottom: 20px; }
+
+.images-slider {
+    display: flex;
+    overflow-x: auto;          /* تفعيل التمرير الأفقي السلس */
+    scroll-snap-type: x mandatory; 
+    gap: 15px;                 /* مسافة أنيقة بين كل صورة وصورة */
+    
+    /* 🌟 اللمسة السحرية هنا 🌟 */
+    width: 100%;               /* تجعل الحاوية تأخذ العرض المتاح داخل الصندوق فقط */
+    box-sizing: border-box;    /* تضمن عدم خروج المسافات عن الإطار */
+    padding: 15px 20px;        /* مسافة داخلية (أعلى/أسفل يمين/يسار) لتبتعد الصور عن الحواف البيضاء وتتنفس */
+    
+    /* لإخفاء شريط التمرير الافتراضي المشوه إذا أردتِ مظهراً أنظف */
+    scrollbar-width: thin;     /* تجعل شريط التمرير نحيفاً وأنيقاً في متصفح فايرفوكس */
+}
+
+.images-slider img {
+    flex: 0 0 80%;             /* كل صورة تأخذ 80% من عرض الحاوية لكي تظهر أطراف الصورة التي تليها وتغري المستخدم بالتمرير */
+    scroll-snap-align: center; /* ضبط محاذاة الصورة في المنتصف */
+    border-radius: 10px;       /* حواف منحنية أنيقة */
+    object-fit: cover;
+}
+
+.modal-footer-note {
+    color: #5C3A21;
+    font-size: 13px;
+    font-style: italic;
+    border-top: 1px dashed #D4A396;
+    padding-top: 15px;
+    margin-bottom: 0;
+}
+/* نشيف هنا كل الId */
+#productColorsModal1:target,
+#productColorsModal2:target,
+#productColorsModal3:target,
+#productColorsModal4:target,
+#productColorsModal5:target,
+#productColorsModal6:target {
+    display: block !important; /* إجبار النافذة على الظهور الآن فقط */
+}

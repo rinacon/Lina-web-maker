@@ -362,6 +362,11 @@ display: flex !important;
     color: #2D1B10;          
 }
 
+.reviews-section h4{
+    color: #ffffff;
+    font-weight: bold;
+}
+
 .reviews-grid {
     display: flex;            
     gap: 20px;               

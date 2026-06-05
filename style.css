@@ -54,11 +54,9 @@ header .logo span { /* اللوقو الي بالعربي  */
     text-align: center;
     padding: 12px 0;
     border-top: 1px solid #fff7f1; /* خط رفيع يفصله عن اللوجو */
-display: flex !important;
+    display: flex !important;
     flex-direction: row !important;
     flex-wrap: nowrap !important;     /* منع النزول لأسفل نهائياً */
-    
-    /* 🌟 اللمسة السحرية لمنع خروج العناصر 🌟 */
     width: 100% !important;           /* تأخذ عرض الشاشة بالمليمتر */
     max-width: 100vw !important;      /* تضمن عدم تجاوز عرض شاشة الجهاز */
     overflow-x: auto !important;      /* التمرير الأفقي يحدث داخل الشريط البني فقط */
@@ -121,6 +119,9 @@ display: flex !important;
 .navbar a:hover {
     color: #ffffff; /* يضيء باللون الأبيض العاجي المائل للوردي الخفيف جداً عند مرور الفأرة */
 }
+
+
+
 
 /* 3. تنسيق القسم الترحيبي الرئيسي*/
 .hero-section {
